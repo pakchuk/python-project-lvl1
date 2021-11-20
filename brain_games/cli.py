@@ -1,12 +1,18 @@
+"""Module ask name of user."""
+
 import prompt
 
+
 def welcome_user():
+    """Ask name of user and return name of user."""
     username_question = 'May I have your name? '
     username = prompt.string(username_question)
-    print('Hello, {}!'.format(username))
+    print('Hello, {0}!'.format(username))
 
-def main():
+
+def main():  # noqa: D103
     welcome_user()
+
 
 if __name__ == '__main__':
     main()

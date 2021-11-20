@@ -1,0 +1,13 @@
+name: Python CI
+
+on:
+  - push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest 
+    steps: 
+      - name: Run linter
+        run: |
+          pip install poetry
+          make lint 
