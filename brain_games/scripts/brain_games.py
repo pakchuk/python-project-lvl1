@@ -8,6 +8,7 @@ def main():
     """Greetings for user, ask username."""
     print('Welcome to the Brain Games!')
     brain_games.cli.welcome_user()
+    print(brain_games.cli.username)
 
 
 if __name__ == '__main__':
