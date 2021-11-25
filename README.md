@@ -10,5 +10,8 @@
 ### Github Actons CI:
 [![Python CI](https://github.com/pakchuk/python-project-lvl1/actions/workflows/pyci.yml/badge.svg)](https://github.com/pakchuk/python-project-lvl1/actions/workflows/pyci.yml)
 
-### asciinema:
+### game check even:
 [![asciicast](https://asciinema.org/a/H5eSwydFwtQ3sPIKYybDxrUps.svg)](https://asciinema.org/a/H5eSwydFwtQ3sPIKYybDxrUps)
+
+### game calculator:
+[![asciicast](https://asciinema.org/a/57W0XyxdaD9QgFqR5ApwcS51W.svg)](https://asciinema.org/a/57W0XyxdaD9QgFqR5ApwcS51W)
