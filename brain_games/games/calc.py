@@ -3,13 +3,13 @@
 import random
 
 
-def calc():
+def game_conditions():
     """
     Realize a conditions for the game 'calculator'.
 
     Returns:
         return 3 game's conditions:
-        1. Rules of the game.2.
+        1. Rules of the game.
         2. String with a math expression.
         3. Correct answer of the expression's calculation.
     """
