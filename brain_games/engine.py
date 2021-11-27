@@ -1,16 +1,16 @@
-"""Realize engine for a control logic of a games."""
+"""Realize engine for a control logic of the games."""
 
 import brain_games.scripts.brain_games
 import prompt
 
 
-def logic(input):
+def logic(game_dataset):
     """
-    Realize engine for a control logic of a games.
+    Realize engine for a control logic of the games.
 
     Args:
-        input:
-            3 conditions for a game:
+        game_dataset:
+            3 dataset for the game:
                 1. Rules of the game.
                 2. String with a math expression.
                 3. Correct answer of the expression's calculation.
@@ -20,14 +20,14 @@ def logic(input):
     """
     print('Welcome to the Brain Games!')
     brain_games.cli.welcome_user()
-    game_rules = input[0]
+    game_rules = game_dataset[0]
     print(game_rules)
     correct_answer_count = 0
     while correct_answer_count < 3:
-        question = (input[1][correct_answer_count])
+        question = (game_dataset[1][correct_answer_count])
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
-        correct_answer = str(input[2][correct_answer_count])
+        correct_answer = str(game_dataset[2][correct_answer_count])
         uncorrect_answer_message = (
             "'{0}' is wrong answer ;(. Correct answer was '{1}'.\n"
             "Let's try  again, {2}").format(

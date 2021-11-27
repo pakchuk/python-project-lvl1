@@ -1,4 +1,4 @@
-"""Return a conditions for the game "GCD'(greatest common divisor)."""
+"""Prepair a dataset for the game "GCD'(greatest common divisor)."""
 
 import random
 
@@ -22,12 +22,12 @@ def find_gcd(number1, number2):
     return number_gcd
 
 
-def game_conditions():
+def make_game_dataset():
     """
-    Realize a game rules for the game 'greatest common divisor' (GCD).
+    Make a dataset for the game 'greatest common divisor' (GCD).
 
     Returns:
-        return 3 game's conditions:
+        return 3 game's dataset:
         1. Rules of the game.
         2. String with 2 random numbers.
         3. Correct answer of the greatest common divisor (gcd) of 2 numbers.

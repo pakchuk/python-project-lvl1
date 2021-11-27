@@ -1,11 +1,11 @@
-"""Return a condition for the game "calculator'."""
+"""Prepair a dataset for the game "calculator'."""
 
 import random
 
 
-def game_conditions():
+def make_game_dataset():
     """
-    Realize a conditions for the game 'calculator'.
+    Make a dataset for the game 'calculator'.
 
     Returns:
         return 3 game's conditions:

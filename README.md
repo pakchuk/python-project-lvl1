@@ -10,11 +10,14 @@
 ### Github Actons CI:
 [![Python CI](https://github.com/pakchuk/python-project-lvl1/actions/workflows/pyci.yml/badge.svg)](https://github.com/pakchuk/python-project-lvl1/actions/workflows/pyci.yml)
 
-### game check even:
+### game 'check even':
 [![asciicast](https://asciinema.org/a/g1OyeTJShlKzUil6qrCXjLL7P.svg)](https://asciinema.org/a/g1OyeTJShlKzUil6qrCXjLL7P)
 
-### game calculator:
+### game 'calculator':
 [![asciicast](https://asciinema.org/a/4rABmt6peF6JzS4bkyXMbHyEC.svg)](https://asciinema.org/a/4rABmt6peF6JzS4bkyXMbHyEC)
 
-### game GCD (greatest common divisor):
+### game 'GCD' (greatest common divisor):
 [![asciicast](https://asciinema.org/a/4rABmt6peF6JzS4bkyXMbHyEC.svg)](https://asciinema.org/a/4rABmt6peF6JzS4bkyXMbHyEC)
+
+### game 'progression':
+[![asciicast](https://asciinema.org/a/AxcJcRWAWdv6E9AZRhIm5NTg7.svg)](https://asciinema.org/a/AxcJcRWAWdv6E9AZRhIm5NTg7)
