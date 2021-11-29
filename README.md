@@ -3,7 +3,6 @@
 [![Actions Status](https://github.com/pakchuk/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/pakchuk/python-project-lvl1/actions)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/cfcb2c51d4230c2fcbe1/maintainability)](https://codeclimate.com/github/pakchuk/python-project-lvl1/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/cfcb2c51d4230c2fcbe1/test_coverage)](https://codeclimate.com/github/pakchuk/python-project-lvl1/test_coverage)
 [![Python CI](https://github.com/pakchuk/python-project-lvl1/actions/workflows/pyci.yml/badge.svg)](https://github.com/pakchuk/python-project-lvl1/actions/workflows/pyci.yml)
 
 ### Discription
