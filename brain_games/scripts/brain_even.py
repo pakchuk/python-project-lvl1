@@ -31,7 +31,7 @@ def main():
             correct_answer = 'no'
         uncorrect_answer_message = (
             "'{0}' is wrong answer ;(. Correct answer was '{1}'.\n"
-            "Let's try  again, {2}!").format(
+            "Let's try again, {2}!").format(
                 answer, correct_answer, brain_games.cli.username)
         if correct_answer == answer:
             print('Correct!')
