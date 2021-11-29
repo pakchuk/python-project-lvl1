@@ -14,13 +14,13 @@ def make_progression():
         return: atithmetic progression.
     """
     start_number = random.randint(1, 99) # noqa S311
-    length_progress = random.randint(5, 10) # noqa S311
-    diff_progress = random.randint(1, 9) # noqa S311
+    length_progression = random.randint(5, 10) # noqa S311
+    diff_progression = random.randint(1, 9) # noqa S311
     progression = ()
-    while length_progress > 0:
+    while length_progression > 0:
         progression = progression + (start_number, )
-        start_number = start_number + diff_progress
-        length_progress -= 1
+        start_number = start_number + diff_progression
+        length_progression -= 1
     return progression
 
 
@@ -40,8 +40,8 @@ def make_game_dataset():
     round_count = 0
     while round_count < 3:
         progression = make_progression()
-        finish_range = len(progression) - 1
-        position_hidden_number = random.randint(0, finish_range) # noqa S311
+        stop_range = len(progression) - 1
+        position_hidden_number = random.randint(0, stop_range) # noqa S311
         hidden_number = progression[position_hidden_number]
         cut1 = progression[:position_hidden_number]
         cut2 = progression[position_hidden_number + 1:]

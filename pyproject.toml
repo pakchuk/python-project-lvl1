@@ -1,10 +1,17 @@
 [tool.poetry]
-name = "hexlet-code"
+name = "brain-games-pavelk"
 version = "0.6.0"
-description = "First project on hexlet.io"
+description = "Python package with 5 CLI games"
 authors = ["Pavel Kalenchuk <pavel.kalenchuk@gmail.com>"]
+repository = "https://github.com/pakchuk/python-project-lvl1"
 packages = [
     {include = "brain_games"},
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux"
 ]
 
 [tool.poetry.dependencies]

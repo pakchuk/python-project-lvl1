@@ -8,7 +8,14 @@ import prompt
 
 
 def main():
-    """Check even of a number, inform user about game's result.""" # noqa DAR201
+    """
+    Ask user about an even of a number.
+
+    Returns:
+        return uncorrect answer message
+
+    3 correct answers in a row win the gamem, 1 wrong answer - lose the game.
+    """
     print('Welcome to the Brain Games!')
     brain_games.cli.welcome_user()
     game_rules = 'Answer "yes" if the number is even, otherwise answer "no".'

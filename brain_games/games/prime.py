@@ -3,7 +3,7 @@
 import random
 
 
-def is_prime():
+def is_prime():  # eah, func predicate don't return bool.
     """
     Check is number a prime number.
 

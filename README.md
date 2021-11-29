@@ -1,14 +1,27 @@
+### "Brain-games-pavelk" python package.
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/pakchuk/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/pakchuk/python-project-lvl1/actions)
 
-### Code Climate Maintainability:
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
-
-### Code Climate Test Coverages:
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
-
-### Github Actons CI:
 [![Python CI](https://github.com/pakchuk/python-project-lvl1/actions/workflows/pyci.yml/badge.svg)](https://github.com/pakchuk/python-project-lvl1/actions/workflows/pyci.yml)
+
+### Discription
+Present repository is a trainig python-package (student's training project on online educational platform hexlet.io), author: Pavel Kalenchuk, e-mail:pavel.kalenchuk@gmail.com.
+"brain-games-pavelk" is a package with 5 CLI games.
+Minimal Python version - 3.8
+
+### How to install package:
+pip install --user -i https://test.pypi.org/simple/ brain-games-pavelk==0.6.0
+
+After installation 5 CLI commands  are availible for user:
+1. brain-even
+2. brain-calc
+3. brain-gcd
+4. brain-progression
+5. brain-prime
+
+### How to play:
 
 ### game 'check even':
 [![asciicast](https://asciinema.org/a/g1OyeTJShlKzUil6qrCXjLL7P.svg)](https://asciinema.org/a/g1OyeTJShlKzUil6qrCXjLL7P)

@@ -11,7 +11,8 @@ def welcome_user():
     print('Hello, {0}!'.format(username))
 
 
-def main():  # noqa: D103
+def main():
+    """Start a welcome_user function."""
     welcome_user()
 
 
