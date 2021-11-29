@@ -37,7 +37,7 @@ def main():
             print('Correct!')
             correct_answer_count += 1
         else:
-            return uncorrect_answer_message
+            return print(uncorrect_answer_message)
     print(f'Congratulations, {brain_games.cli.username}!')
 
 
