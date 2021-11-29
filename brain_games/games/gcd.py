@@ -27,7 +27,7 @@ def make_game_dataset():
     Make a dataset for the game 'greatest common divisor' (GCD).
 
     Returns:
-        return 3 game's dataset:
+        return dataset for 3 rounds of the game:
         1. Rules of the game.
         2. String with 2 random numbers.
         3. Correct answer of the greatest common divisor (gcd) of 2 numbers.
@@ -43,6 +43,6 @@ def make_game_dataset():
             f'{first_rand_number} {second_rand_number}')
         question = (string_question, ) + question
         eval_answer = find_gcd(first_rand_number, second_rand_number)
-        correct_answer = (eval_answer, ) + correct_answer
+        correct_answer = (str(eval_answer), ) + correct_answer
         round_count += 1
     return game_rules, question, correct_answer

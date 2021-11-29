@@ -27,7 +27,7 @@ def logic(game_dataset):
         question = (game_dataset[1][correct_answer_count])
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
-        correct_answer = str(game_dataset[2][correct_answer_count])
+        correct_answer = game_dataset[2][correct_answer_count]
         uncorrect_answer_message = (
             "'{0}' is wrong answer ;(. Correct answer was '{1}'.\n"
             "Let's try  again, {2}").format(

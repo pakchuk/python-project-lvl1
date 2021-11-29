@@ -8,7 +8,7 @@ def make_game_dataset():
     Make a dataset for the game 'calculator'.
 
     Returns:
-        return 3 game's conditions:
+        return dataset for 3 rounds of the game:
         1. Rules of the game.
         2. String with a math expression.
         3. Correct answer of the expression's calculation.
@@ -26,6 +26,6 @@ def make_game_dataset():
             f'{first_rand_number} {random_math_operation} {second_rand_number}')
         eval_answer = eval(string_question) # noqa S307
         question = (string_question, ) + question
-        correct_answer = (eval_answer, ) + correct_answer
+        correct_answer = (str(eval_answer), ) + correct_answer
         round_count += 1
     return game_rules, question, correct_answer

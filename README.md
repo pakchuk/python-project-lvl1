@@ -21,3 +21,6 @@
 
 ### game 'progression':
 [![asciicast](https://asciinema.org/a/AxcJcRWAWdv6E9AZRhIm5NTg7.svg)](https://asciinema.org/a/AxcJcRWAWdv6E9AZRhIm5NTg7)
+
+### game 'prime':
+[![asciicast](https://asciinema.org/a/7RnPXRp92fTfhhJbTDFWlengt.svg)](https://asciinema.org/a/7RnPXRp92fTfhhJbTDFWlengt)
