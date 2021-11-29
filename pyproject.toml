@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "brain-games-pavelk"
+name = "hexlet-code"
 version = "0.6.0"
 description = "Python package with 5 CLI games"
 authors = ["Pavel Kalenchuk <pavel.kalenchuk@gmail.com>"]

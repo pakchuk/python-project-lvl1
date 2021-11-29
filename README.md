@@ -1,4 +1,4 @@
-### "Brain-games-pavelk" python package.
+### "brain-games" python package.
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/pakchuk/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/pakchuk/python-project-lvl1/actions)
 
@@ -8,11 +8,11 @@
 
 ### Discription
 Present repository is a trainig python-package (student's training project on online educational platform hexlet.io), author: Pavel Kalenchuk, e-mail:pavel.kalenchuk@gmail.com.
-"brain-games-pavelk" is a package with 5 CLI games.
+"brain-games" is a package with 5 CLI games.
 Minimal Python version - 3.8
 
 ### How to install package:
-pip install --user -i https://test.pypi.org/simple/ brain-games-pavelk==0.6.0
+pip install --user {your_directory}/hexlet_code-0.6.0-py-none-any.whl
 
 After installation 5 CLI commands  are availible for user:
 1. brain-even
