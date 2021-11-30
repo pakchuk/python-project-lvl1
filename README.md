@@ -11,9 +11,13 @@ Present repository is a trainig python-package (student's training project on on
 Minimal Python version - 3.8
 
 ### How to install package:
-«pip install --user {your_directory}/hexlet_code-0.6.0-py-none-any.whl».
+```sh
+pip install --user {your_directory}/hexlet_code-0.6.0-py-none-any.whl»
+```
 or install from test pypi:
-«pip install --user -i https://test.pypi.org/simple/ brain-games-pavelk»
+```sh
+pip install --user -i https://test.pypi.org/simple/ brain-games-pavelk
+```
 
 
 After installation 5 CLI commands  are availible for user:
