@@ -7,7 +7,7 @@ import brain_games.scripts.brain_games
 import prompt
 
 
-def main():
+def is_even():
     """
     Ask user about an even of a number.
 
@@ -40,6 +40,10 @@ def main():
             return print(uncorrect_answer_message)
     print(f'Congratulations, {brain_games.cli.username}!')
 
+
+def main():
+    """Start function is_even()."""
+    is_even()
 
 if __name__ == '__main__':
     main()

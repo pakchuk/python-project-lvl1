@@ -11,7 +11,7 @@ def make_progression():
     from 5 to 10 and random start number in range from 1 to 99.
 
      Returns:
-        return: atithmetic progression.
+        return: arithmetic progression.
     """
     start_number = random.randint(1, 99) # noqa S311
     length_progression = random.randint(5, 10) # noqa S311
