@@ -8,12 +8,7 @@ import prompt
 
 
 def is_even():
-    """
-    Ask about even of a random number.
-
-    Returns:
-        return uncorrect answer message
-    """
+    """Ask about even of a random number."""
     print('Welcome to the Brain Games!')
     brain_games.cli.welcome_user()
     game_rules = 'Answer "yes" if the number is even, otherwise answer "no".'
@@ -34,9 +29,11 @@ def is_even():
         if correct_answer == answer:
             print('Correct!')
             correct_answer_count += 1
+            game_result = f'Congratulations, {brain_games.cli.username}!'
         else:
-            return print(uncorrect_answer_message)
-    print(f'Congratulations, {brain_games.cli.username}!')
+            game_result = uncorrect_answer_message
+            break
+    print(game_result)
 
 
 def main():
