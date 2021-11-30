@@ -9,7 +9,7 @@ import prompt
 
 def is_even():
     """
-    Ask user about an even of a number.
+    Ask about even of a random number.
 
     Returns:
         return uncorrect answer message
