@@ -33,17 +33,17 @@ After installation 5 CLI commands  are availible for user:
 
 ## How to play:
 
-# game 'check even':
+### _game 'check even':_
 [![asciicast](https://asciinema.org/a/g1OyeTJShlKzUil6qrCXjLL7P.svg)](https://asciinema.org/a/g1OyeTJShlKzUil6qrCXjLL7P)
 
-# game 'calculator':
+### _game 'calculator':_
 [![asciicast](https://asciinema.org/a/4rABmt6peF6JzS4bkyXMbHyEC.svg)](https://asciinema.org/a/4rABmt6peF6JzS4bkyXMbHyEC)
 
-# game 'GCD' (greatest common divisor):
+### _game 'GCD' (greatest common divisor):_
 [![asciicast](https://asciinema.org/a/4rABmt6peF6JzS4bkyXMbHyEC.svg)](https://asciinema.org/a/4rABmt6peF6JzS4bkyXMbHyEC)
 
-# game 'progression':
+### _game 'progression':_
 [![asciicast](https://asciinema.org/a/AxcJcRWAWdv6E9AZRhIm5NTg7.svg)](https://asciinema.org/a/AxcJcRWAWdv6E9AZRhIm5NTg7)
 
-# game 'prime':
+### _game 'prime':_
 [![asciicast](https://asciinema.org/a/7RnPXRp92fTfhhJbTDFWlengt.svg)](https://asciinema.org/a/7RnPXRp92fTfhhJbTDFWlengt)
