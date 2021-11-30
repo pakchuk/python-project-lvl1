@@ -11,8 +11,6 @@ def is_even():
     """
     Ask user about an even of a number.
 
-    3 correct answers in a row win the gamem, 1 wrong answer - lose the game.
-
     Returns:
         return uncorrect answer message
     """
