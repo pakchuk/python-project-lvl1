@@ -7,7 +7,7 @@ import brain_games.games.calc
 
 def main():
     """Start a game 'calculator'."""
-    brain_games.engine.logic(brain_games.games.calc.make_game_dataset())
+    brain_games.engine.control_game(brain_games.games.calc)
 
     if __name__ == '__main__':
         main()
