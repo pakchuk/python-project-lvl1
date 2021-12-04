@@ -15,7 +15,7 @@ Minimal Python version - 3.8
 
 # How to install package:
 ```sh
-pip install --user {your_directory}/hexlet_code-0.6.0-py-none-any.whl»
+pip install --user {your_directory}/hexlet_code-0.6.0-py-none-any.whl
 ```
 or install from test pypi:
 ```sh
