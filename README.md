@@ -26,10 +26,12 @@ or install from test pypi:
 ```sh
 pip install --user -i  https://test.pypi.org/simple/ brain-games-pakchuk==1.0.0
 ```
-install WHL file from your local distination: 
+install WHL file from your local distination:
+
 [![asciicast](https://asciinema.org/a/SHDje9Atbso29rnEkwxcdajO1.svg)](https://asciinema.org/a/SHDje9Atbso29rnEkwxcdajO1)
 
 install from test.pypi:
+
 [![asciicast](https://asciinema.org/a/fMq0uFVcO4MLslzCb4bP3zPY5.svg)](https://asciinema.org/a/fMq0uFVcO4MLslzCb4bP3zPY5)
 
 
