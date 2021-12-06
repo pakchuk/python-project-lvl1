@@ -10,7 +10,7 @@
 Present repository is a trainig python-package
 (student's training project on online educational platform hexlet.io).
 
-author: Pavel Kalenchuk
+author: Pavel Kalenchuk, 
 e-mail: pavel.kalenchuk@gmail.com.
 
 Minimal Python version - 3.8
