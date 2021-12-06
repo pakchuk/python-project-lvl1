@@ -1,16 +1,23 @@
-"""Prepair a dataset for the game "calculator'."""
+"""Provide a dataset for the game "calculator'."""
 
 import random
 
-GAME_RULES = 'What is the result of the expression?'
+GAME_DESCRIPTION = 'What is the result of the expression?'
 ROUNDS_COUNT = 3
 
-def gen(): 
-    first_rand_number = random.randint(1, 10) # noqa S311
-    second_rand_number = random.randint(1, 10) # noqa S311
-    math_operation = ('+', '-', '*')
-    random_math_operation = random.choice(math_operation) # noqa S311
+
+def generate_question_answer():
+    """Return question and answer for the game 'calculator'.
+
+    Returns:
+        question(str): expression of 2 random numbers and random math perator
+        answer(str): calculation of expression from question
+    """
+    random_number1 = random.randint(1, 10)
+    random_number2 = random.randint(1, 10)
+    math_operators = ('+', '-', '*')
+    random_math_operator = random.choice(math_operators)
     question = (
-        f'{first_rand_number} {random_math_operation} {second_rand_number}')
+        f'{random_number1} {random_math_operator} {random_number2}')
     answer = str(eval(question)) # noqa S307
     return question, answer

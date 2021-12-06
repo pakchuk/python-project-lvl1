@@ -1,13 +1,14 @@
 """Script for start a game 'calculator'."""
 #!/usr/bin/env python3 # noqa:E265
 
-import brain_games.engine
-import brain_games.games.calc
+from brain_games.engine import control_game
+from brain_games.games import calc
 
 
 def main():
-    """Start a game 'calculator'."""
-    brain_games.engine.control_game(brain_games.games.calc)
+    """Start the game 'calculator'."""
+    control_game(calc)
 
-    if __name__ == '__main__':
-        main()
+
+if __name__ == '__main__':
+    main()

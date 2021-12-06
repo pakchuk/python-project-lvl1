@@ -1,48 +1,26 @@
-"""Prepair a dataset for the game "GCD'(greatest common divisor)."""
+"""Provide a dataset for the game "GCD'(greatest common divisor)."""
 
 import random
 
+GAME_DESCRIPTION = 'Find the greatest common divisor of given numbers.'
+ROUNDS_COUNT = 3
 
-def find_gcd(number1, number2):
-    """Find a greatest common divisor (gcd).
 
-    Args:
-        number1: number for find GCD with number2
-        number2: number for find GCD with number1
+def generate_question_answer():
+    """Return question and answer for the game 'GCD'.
 
     Returns:
-        return finded greatest common divisor.
+        question(str): 2 random numbers
+        answer(str): GCD of 2 numbers from question
     """
-    while number1 != 0 and number2 != 0:
-        if number1 > number2:
-            number1 = number1 % number2
+    random_number1 = random.randint(1, 100)
+    random_number2 = random.randint(1, 100)
+    question = f'{random_number1} {random_number2}'
+    while random_number1 != 0 and random_number2 != 0:
+        if random_number1 > random_number2:
+            random_number1 = random_number1 % random_number2
         else:
-            number2 = number2 % number1
-    number_gcd = number2 + number1
-    return number_gcd
-
-
-def make_game_dataset():
-    """
-    Make a dataset for the game 'greatest common divisor' (GCD).
-
-    Returns:
-        return dataset for 3 rounds of the game:
-        1. Rules of the game.
-        2. String with 2 random numbers.
-        3. Correct answer of the greatest common divisor (gcd) of 2 numbers.
-    """
-    game_rules = 'Find the greatest common divisor of given numbers.'
-    round_count = 0
-    question = ()
-    correct_answer = ()
-    while round_count < 3:
-        first_rand_number = random.randint(1, 100) # noqa S311
-        second_rand_number = random.randint(1, 100) # noqa S311
-        string_question = (
-            f'{first_rand_number} {second_rand_number}')
-        question = (string_question, ) + question
-        eval_answer = find_gcd(first_rand_number, second_rand_number)
-        correct_answer = (str(eval_answer), ) + correct_answer
-        round_count += 1
-    return game_rules, question, correct_answer
+            random_number2 = random_number2 % random_number1
+    gcd = random_number2 + random_number1
+    answer = str(gcd)
+    return question, answer

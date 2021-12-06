@@ -1,4 +1,4 @@
-"""Module ask name of user."""
+"""Module ask name of player."""
 
 import prompt
 

@@ -1,13 +1,14 @@
 """Script for start a game 'Progression'."""
 #!/usr/bin/env python3 # noqa:E265
 
-import brain_games.engine
-import brain_games.games.progression
+from brain_games.engine import control_game
+from brain_games.games import progression
 
 
 def main():
-    """Start a game 'Progression'."""
-    brain_games.engine.logic(brain_games.games.progression.make_game_dataset())
+    """Start the game 'Progression'."""
+    control_game(progression)
 
-    if __name__ == '__main__':
-        main()
+
+if __name__ == '__main__':
+    main()

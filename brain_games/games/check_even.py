@@ -1,9 +1,8 @@
-"""Provide a dataset for the game "prime'."""
+"""Provide a dataset for the game "check even'."""
 
 import random
 
-GAME_DESCRIPTION = (
-    'Answer "yes" if given number is prime. Otherwise answer "no".')
+GAME_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 ROUNDS_COUNT = 3
 
 
@@ -16,10 +15,8 @@ def generate_question_answer():
     """
     random_number = random.randint(1, 100)
     question = str(random_number)
-    for i in range(2, random_number):
-        if random_number == 1 or random_number % i == 0:
-            answer = 'no'
-            break
-        else:
-            answer = 'yes'
+    if random_number % 2 == 0:
+        answer = 'yes'
+    else:
+        answer = 'no'
     return question, answer

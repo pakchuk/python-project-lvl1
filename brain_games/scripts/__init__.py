@@ -1,1 +1,1 @@
-"""Package with scripts for CLI game."""
+"""Package with scripts which start a CLI games."""

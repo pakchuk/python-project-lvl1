@@ -1,29 +1,39 @@
-# "brain-games" python package.
+# "hexlet-code" python package.
 
 [![Actions Status](https://github.com/pakchuk/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/pakchuk/python-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/cfcb2c51d4230c2fcbe1/maintainability)](https://codeclimate.com/github/pakchuk/python-project-lvl1/maintainability)
 [![Python CI](https://github.com/pakchuk/python-project-lvl1/actions/workflows/pyci.yml/badge.svg)](https://github.com/pakchuk/python-project-lvl1/actions/workflows/pyci.yml)
 
 # Discription
-Present repository is a trainig python-package (student's training project on online educational platform hexlet.io).
+"hexlet-code" is a python package realizes a set of 5 CLI games.
 
-author: Pavel Kalenchuk, e-mail: pavel.kalenchuk@gmail.com.
+Present repository is a trainig python-package
+(student's training project on online educational platform hexlet.io).
 
-"brain-games" is a package with 5 CLI games.
+author: Pavel Kalenchuk
+e-mail: pavel.kalenchuk@gmail.com.
 
 Minimal Python version - 3.8
 
+Project was created by [poetry](https://python-poetry.org/) tool.
+
+
 # How to install package:
 ```sh
-pip install --user {your_directory}/hexlet_code-0.6.0-py-none-any.whl
+pip install --user {your_directory}/hexlet_code-1.0.0-py-none-any.whl
 ```
 or install from test pypi:
 ```sh
-pip install --user -i https://test.pypi.org/simple/ brain-games-pavelk
+pip install --user -i  https://test.pypi.org/simple/ brain-games-pakchuk==1.0.0
 ```
-[![asciicast](https://asciinema.org/a/XhXyI2sJRijp6JLk7nEAGpMi1.svg)](https://asciinema.org/a/XhXyI2sJRijp6JLk7nEAGpMi1)
+install WHL file from your local distination: 
+[![asciicast](https://asciinema.org/a/SHDje9Atbso29rnEkwxcdajO1.svg)](https://asciinema.org/a/SHDje9Atbso29rnEkwxcdajO1)
 
-After installation 5 CLI commands  are availible for user:
+install from test.pypi:
+[![asciicast](https://asciinema.org/a/fMq0uFVcO4MLslzCb4bP3zPY5.svg)](https://asciinema.org/a/fMq0uFVcO4MLslzCb4bP3zPY5)
+
+
+After installation 5 CLI commands are availible for user:
 1. brain-even
 2. brain-calc
 3. brain-gcd
