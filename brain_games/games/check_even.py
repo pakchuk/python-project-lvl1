@@ -3,7 +3,6 @@
 import random
 
 GAME_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
-ROUNDS_COUNT = 3
 
 
 def generate_question_answer():

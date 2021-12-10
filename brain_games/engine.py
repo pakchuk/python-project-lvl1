@@ -2,42 +2,40 @@
 
 import prompt
 
+ROUNDS_COUNT = 3
 
-def control_game(game_dataset):
+
+def run_game(game):
     """
     Control a logic of the CLI game.
 
-    Game logic step by step: greet plyer, ask player name,
+    Game logic step by step: greet player, ask player name,
     show a game description, show a question, recieve player's
-    answer, 3 correct answer in a row - win the game, first
-    wrong answer - game over.
+    answer, check player's answer, inform user about correction of
+    plaeyr's answer. 3 correct answer in a row - win the game,
+    first wrong answer - game over.
 
     Parameters:
-        game_dataset(module): module which provide a dataset of the game:
+        game(module): module which provide a dataset of the game:
             - game description;
-            - count of rounds;
             - function, which returns question and answer.
     """
-    greeting = 'Welcome to the Brain Games!'
-    print(greeting)
-    game_description = game_dataset.GAME_DESCRIPTION
-    player_name = prompt.string('May I Have Your Name? ')
-    print(f'Hello, {player_name}!\n{game_description}')
-    rounds_count = game_dataset.ROUNDS_COUNT
-    i = 0
-    while i < rounds_count:
-        question, answer = game_dataset.generate_question_answer()
+    print('Welcome to the Brain Games!')
+    game_description = game.GAME_DESCRIPTION
+    username = prompt.string('May I Have Your Name? ')
+    print(f'Hello, {username}!\n{game_description}')
+    for _i in range(0, ROUNDS_COUNT):
+        question, answer = game.generate_question_answer()
         print(f'Question: {question}')
-        player_answer = prompt.string('Your answer: ')
-        game_win_message = (f'Congratulations, {player_name}!')
-        game_over_message = (
-            "'{0}' is wrong answer ;(. Correct answer was '{1}'.\n"
-            "Let's try again, {2}!").format(
-                player_answer, answer, player_name)
-        if player_answer != answer:
-            game_result = game_over_message
+        user_answer = prompt.string('Your answer: ')
+        if user_answer != answer:
+            print(
+                ("'{0}' is wrong answer ;(. Correct answer was '{1}'.\n"
+                 "Let's try again, {2}!").format(user_answer, answer, username))
+            game_win = False
             break
-        print('Correct!')
-        i += 1
-        game_result = game_win_message
-    print(game_result)
+        else:
+            print('Correct!')
+            game_win = True
+    if game_win:
+        print(f'Congratulations, {username}!')

@@ -4,7 +4,23 @@ import random
 
 GAME_DESCRIPTION = (
     'Answer "yes" if given number is prime. Otherwise answer "no".')
-ROUNDS_COUNT = 3
+
+
+def is_prime(number):
+    """Return boolean type for question 'is prime number'.
+
+    Parameters:
+        number(int): integer number
+
+    Returns:
+        boolean type about a is prime number or not
+    """
+    if number == 1:
+        return False
+    for i in range(2, number):
+        if number % i == 0:
+            return False
+    return True
 
 
 def generate_question_answer():
@@ -14,14 +30,10 @@ def generate_question_answer():
         question(str): random number in range from 1 to 100
         answer(str): 'yes' - number is prime, 'no' - number is not prime.
     """
-    random_number = random.randint(1, 100)
-    question = str(random_number)
-    for i in range(2, random_number):
-        if random_number == 1:
-            answer = 'no'
-        elif random_number % i == 0:
-            answer = 'no'
-            break
-        else:
-            answer = 'yes'
+    number = random.randint(1, 100)
+    question = str(number)
+    if is_prime(number):
+        answer = 'yes'
+    else:
+        answer = 'no'
     return question, answer

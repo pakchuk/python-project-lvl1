@@ -1,9 +1,28 @@
 """Provide a dataset for the game "calculator'."""
 
+import operator
 import random
 
 GAME_DESCRIPTION = 'What is the result of the expression?'
-ROUNDS_COUNT = 3
+
+
+def calc(num1, num2, operation):
+    """Return a result of math expression.
+
+    Parameters:
+        num1(int): first number for math expression
+        num2(int): second number for math expression
+        operation(function): one of standart operator from (+,-,*)
+
+    Returns:
+        the result(int) of evaluating an expression of two numbers (num1, num2)
+    """
+    operation_dict = {
+        '+': operator.add,
+        '-': operator.sub,
+        '*': operator.mul,
+    }
+    return(operation_dict[operation](num1, num2))
 
 
 def generate_question_answer():
@@ -13,11 +32,9 @@ def generate_question_answer():
         question(str): expression of 2 random numbers and random math perator
         answer(str): calculation of expression from question
     """
-    random_number1 = random.randint(1, 10)
-    random_number2 = random.randint(1, 10)
-    math_operators = ('+', '-', '*')
-    random_math_operator = random.choice(math_operators)
-    question = (
-        f'{random_number1} {random_math_operator} {random_number2}')
-    answer = str(eval(question)) # noqa S307
+    num1 = random.randint(1, 10)
+    num2 = random.randint(1, 10)
+    operation = random.choice(('+', '-', '*'))
+    question = f'{num1} {operation} {num2}'
+    answer = str(calc(num1, num2, operation))
     return question, answer

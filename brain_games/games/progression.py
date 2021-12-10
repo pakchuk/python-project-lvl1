@@ -3,7 +3,24 @@
 import random
 
 GAME_DESCRIPTION = 'What number is missing in the progression?'
-ROUNDS_COUNT = 3
+
+
+def make_progression(first_num, diff, length):
+    """Return arithmetic progression.
+
+    Parameters:
+        first_num(int): first mumber of progression
+        diff(int): differense of the progression
+        length(int): quantity on numbers of progression
+
+    Returns:
+        progression(list): arithmetic progression, every element is str type
+    """
+    progression = []
+    for _i in range(length):
+        progression.append(str(first_num))
+        first_num += diff
+    return progression
 
 
 def generate_question_answer():
@@ -18,27 +35,14 @@ def generate_question_answer():
         question(str): arithmetic progression with one hidden number
         answer(str): hidden number of progression from question
     """
-    # create progression (tuple):
-    first_numb_progression = random.randint(1, 99)
-    length_progression = random.randint(5, 10)
-    diff_progression = random.randint(1, 9)
-    progression = ()
-    i = length_progression
-    while i > 0:
-        progression = progression + (first_numb_progression, )
-        first_numb_progression = first_numb_progression + diff_progression
-        i -= 1
+    # create progression (list with str type numbers):
+    first_num = random.randint(1, 99)
+    length = random.randint(5, 10)
+    diff = random.randint(1, 9)
+    progression = make_progression(first_num, diff, length)
     # create progression with hidden number (str):
-    final_possible_index_hidden_numb = len(progression) - 1
-    index_hidden_number = random.randint(0, final_possible_index_hidden_numb)
-    progression_before_hide_numb = progression[:index_hidden_number]
-    progression_after_hide_numb = progression[index_hidden_number + 1:]
-    progression_with_hidden_number = (
-        progression_before_hide_numb + ('..', ) + progression_after_hide_numb)
-    question = ''
-    # transform progression with hidden number from tuple to str:
-    for i in progression_with_hidden_number:
-        question = question + str(i) + ' '
-    question = question[:-1]
-    answer = str(progression[index_hidden_number])
+    hidden_index = random.randint(0, len(progression) - 1)
+    answer = progression.pop(hidden_index)
+    progression.insert(hidden_index, '..')
+    question = ' '.join(progression)
     return question, answer
