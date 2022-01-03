@@ -29,13 +29,9 @@ def run_game(game):
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
         if user_answer != answer:
-            print(
+            return print(
                 ("'{0}' is wrong answer ;(. Correct answer was '{1}'.\n"
                  "Let's try again, {2}!").format(user_answer, answer, username))
-            game_win = False
-            break
         else:
             print('Correct!')
-            game_win = True
-    if game_win:
-        print(f'Congratulations, {username}!')
+    print(f'Congratulations, {username}!')
