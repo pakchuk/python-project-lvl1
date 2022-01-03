@@ -19,6 +19,9 @@ def run_game(game):
         game(module): module which provide a dataset of the game:
             - game description;
             - function, which returns question and answer.
+
+    Returns:
+        message(string): message about wrong answer.
     """
     print('Welcome to the Brain Games!')
     game_description = game.GAME_DESCRIPTION
