@@ -7,7 +7,7 @@
 # Discription
 "hexlet-code" is a python package realizes a set of 5 CLI games.
 
-Present repository is a trainig python-package
+Present repository is a training python-package
 (student's training project on online educational platform hexlet.io).
 
 author: Pavel Kalenchuk
