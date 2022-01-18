@@ -25,7 +25,7 @@ pip install --user {your_directory}/hexlet_code-1.0.0-py-none-any.whl
 ```
 or install from test pypi:
 ```sh
-pip install --user -i  https://test.pypi.org/simple/ brain-games-pakchuk==1.0.0
+pip install --user -i https://test.pypi.org/simple/ brain-games-pakchuk==1.0.1
 ```
 install WHL file from your local distination:
 
