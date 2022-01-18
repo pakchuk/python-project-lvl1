@@ -33,7 +33,7 @@ install WHL file from your local distination:
 
 install from test.pypi:
 
-[![asciicast](https://asciinema.org/a/fMq0uFVcO4MLslzCb4bP3zPY5.svg)](https://asciinema.org/a/fMq0uFVcO4MLslzCb4bP3zPY5)
+[![asciicast](https://asciinema.org/a/JUNxJvWhJN0WOhpwZ9Cj1rdwy.svg)](https://asciinema.org/a/JUNxJvWhJN0WOhpwZ9Cj1rdwy)
 
 
 After installation 5 CLI commands are availible for user:
