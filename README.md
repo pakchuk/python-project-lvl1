@@ -4,7 +4,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/cfcb2c51d4230c2fcbe1/maintainability)](https://codeclimate.com/github/pakchuk/python-project-lvl1/maintainability)
 [![Python CI](https://github.com/pakchuk/python-project-lvl1/actions/workflows/pyci.yml/badge.svg)](https://github.com/pakchuk/python-project-lvl1/actions/workflows/pyci.yml)
 
-# Discription
+# Description
 "hexlet-code" is a python package realizes a set of 5 CLI games.
 
 Present repository is a training python-package
